@@ -1,0 +1,39 @@
+/*
+* Bootstrap
+*/
+@import "./scss/bootstrap";
+
+/*
+* Angular material and themes 
+*/
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import './themes/default.theme';
+@import './themes/dark.theme';
+
+/*
+* Theme styles
+*/
+@import './styles-reset.theme';
+@import './app/layout/layout.theme';
+@import './app/auth/auth.theme';
+
+@mixin custom-components-theme($theme) {
+  @include zenzen-app-reset-theme($theme);
+  @include zenzen-layout-component-theme($theme);
+  @include zenzen-auth-component-theme($theme);
+}
+
+/*
+* Themes class
+*/
+.default-theme {
+  @include angular-material-theme($zenzen-default-theme);
+  @include custom-components-theme($zenzen-default-theme);
+}
+
+.dark-theme {
+  @include angular-material-theme($zenzen-dark-theme);
+  @include custom-components-theme($zenzen-dark-theme);
+}

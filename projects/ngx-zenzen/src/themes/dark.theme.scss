@@ -1,0 +1,5 @@
+$zenzen-dark-primary: mat-palette($mat-grey, 700, 300, 900);
+$zenzen-dark-accent: mat-palette($mat-blue-grey, 400);
+$zenzen-dark-warn: mat-palette($mat-red, 500);
+
+$zenzen-dark-theme: mat-dark-theme($zenzen-dark-primary, $zenzen-dark-accent, $zenzen-dark-warn);

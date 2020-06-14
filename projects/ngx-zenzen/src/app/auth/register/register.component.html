@@ -1,0 +1,116 @@
+<div class="container-fluid auth-page">
+  <div class="row vh-100 justify-content-center align-items-center">
+    <div class="col-12 col-sm-10 col-md-8 p-0" style="max-width: 450px !important;">
+      <form [formGroup]="register" (ngSubmit)="onRegister()">
+        <mat-card>
+          <mat-card-header class="d-block text-center">
+            <div class="logo">
+              <img src="./assets/icons/icon-72x72.png" width="52px" height="52px" alt="logo">
+            </div>
+            <h2>Sign up</h2>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-6">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>First name</mat-label>
+                  <input matInput formControlName="first_name">
+                  <mat-error *ngIf="register.controls['first_name'].hasError('required')">
+                    First name is <strong>required</strong>
+                  </mat-error>
+                  <mat-error *ngIf="register.controls['first_name'].hasError('maxlength')">
+                    First name cannot be more than 150 characters long
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Last name</mat-label>
+                  <input matInput formControlName="last_name">
+                  <mat-error *ngIf="register.controls['last_name'].hasError('required')">
+                    Last name is <strong>required</strong>
+                  </mat-error>
+                  <mat-error *ngIf="register.controls['last_name'].hasError('maxlength')">
+                    Last name cannot be more than 150 characters long
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-12">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>E-mail</mat-label>
+                  <input matInput formControlName="email">
+                  <mat-error *ngIf="register.controls['email'].hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                  <mat-error
+                    *ngIf="register.controls['email'].hasError('email') && !register.controls['email'].hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-12">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" type="password">
+                  <mat-error *ngIf="register.controls['password'].hasError('required')">
+                    Password is <strong>required</strong>
+                  </mat-error>
+                  <mat-error
+                    *ngIf="register.controls['password'].hasError('minlength') && !register.controls['password'].hasError('required')">
+                    Password must be at least 6 characters long
+                  </mat-error>
+                  <mat-error *ngIf="register.controls['password'].hasError('maxlength')">
+                    Password cannot be more than 150 characters long
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-12">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Password (Confirm)</mat-label>
+                  <input matInput formControlName="password_confirm" type="password">
+                  <mat-error *ngIf="register.controls['password_confirm'].hasError('required')">
+                    Password is <strong>required</strong>
+                  </mat-error>
+                  <mat-error
+                    *ngIf="register.controls['password_confirm'].hasError('minlength') && !register.controls['password_confirm'].hasError('required')">
+                    Password must be at least 6 characters long
+                  </mat-error>
+                  <mat-error *ngIf="register.controls['password_confirm'].hasError('maxlength')">
+                    Password (Confirm) cannot be more than 150 characters long
+                  </mat-error>
+                  <mat-error
+                    *ngIf="!register.controls['password_confirm'].hasError('required') && register.controls['password_confirm'].hasError('mismatch')">
+                    Those passwords didn't match. Try again.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <mat-checkbox color="primary" formControlName="terms">
+                  I accept the <a class="text-decoration-none" href="https://policies.google.com/terms" target="_blank"
+                    rel="noopener noreferrer">
+                    terms and conditions.
+                  </a>
+                </mat-checkbox>
+              </div>
+              <div class="col-12 mt-3">
+                <button class="w-100" mat-raised-button color="primary" type="submit" [disabled]="!register.valid">
+                  Sign up
+                </button>
+              </div>
+              <div class="col-12 mt-2">
+                <p class="m-0 text-center">
+                  Already have an account?
+                  <a class="text-decoration-none" [routerLink]="[ '/auth', 'login' ]">
+                    Sign in
+                  </a>
+                </p>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </form>
+    </div>
+  </div>
+</div>

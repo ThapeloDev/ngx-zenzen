@@ -1,0 +1,64 @@
+<div class="layout-container" [ngClass]="{'is-mobile': !media.sm.matches, 'is-desktop': media.sm.matches}">
+  <mat-toolbar color="primary" class="toolbar">
+    <nav class="toolbar-logo" *ngIf="media.sm.matches">
+      <a class="toolbar-logo-link" [routerLink]="['/app', 'dashboard']">
+        <img src="./assets/icons/icon-96x96.png" />
+      </a>
+    </nav>
+    <button mat-icon-button (click)="sidenav.toggle()" *ngIf="!media.sm.matches">
+      <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
+    </button>
+    <h1>Zenzen</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav color="primary" class="sidenav" opened autoFocus="false"
+      [mode]="!media.sm.matches ? 'over' : 'side'" [fixedInViewport]="!media.sm.matches">
+      <section class="horizontal-sidenav" *ngIf="!media.sm.matches">
+        <mat-list class="menu">
+          <mat-list-item *ngFor="let m of menus" class="menu-item" [ngClass]="{'active': m.title === 'Stats'}">
+            <div mat-line>{{m.title}}</div>
+          </mat-list-item>
+        </mat-list>
+      </section>
+      <section class="vertical-sidenav" *ngIf="media.sm.matches">
+        <div class="nav-main">
+          <button mat-mini-fab color="primary" class="main-button" *ngFor="let m of menus" [matTooltip]="m.title"
+            matTooltipPosition="right" [routerLink]="m.link" routerLinkActive="active">
+            <fa-icon [icon]="['fas', m.icon]"></fa-icon>
+          </button>
+        </div>
+        <div class="nav-user">
+          <button mat-mini-fab color="primary" class="user-button" [matMenuTriggerFor]="menuUser" *ngFor="let m of user">
+            <fa-icon [icon]="['fas', m.icon]"></fa-icon>
+          </button>
+        </div>
+      </section>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<mat-menu #menuUser="matMenu" overlapTrigger="false" class="userMenu">
+  <div class="pl-3 pr-3 pt-2 pb-2" [routerLink]="['/app', 'settings']">
+    <h4 class="font-weight-normal m-0 text-truncate name">
+      John Smith
+    </h4>
+    <span class="email" (click)="($event.stopPropagation())">
+      example@example.com
+    </span>
+  </div>
+  <mat-divider></mat-divider>
+  <button mat-menu-item [routerLink]="['/app', 'settings']">
+    <fa-icon [icon]="['fas', 'cog']" class="mr-3"></fa-icon>
+    Settings
+  </button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item [routerLink]="['/auth', 'login']">
+    <fa-icon [icon]="['fas', 'sign-out-alt']" class="mr-3"></fa-icon>
+    Login
+  </button>
+</mat-menu>

@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1592096993328,
+  "index": "/ngx-zenzen/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/ngx-zenzen/1-es2015.8bb44ceedcb4d2b8e67e.js",
+        "/ngx-zenzen/1-es5.8bb44ceedcb4d2b8e67e.js",
+        "/ngx-zenzen/6-es2015.53db73066d4c5dd98177.js",
+        "/ngx-zenzen/6-es5.53db73066d4c5dd98177.js",
+        "/ngx-zenzen/7-es2015.8755f17edb738c3b6928.js",
+        "/ngx-zenzen/7-es5.8755f17edb738c3b6928.js",
+        "/ngx-zenzen/8-es2015.f26af5c1081f8a4ea5d3.js",
+        "/ngx-zenzen/8-es5.f26af5c1081f8a4ea5d3.js",
+        "/ngx-zenzen/favicon.ico",
+        "/ngx-zenzen/index.html",
+        "/ngx-zenzen/main-es2015.e5369c928586858d215e.js",
+        "/ngx-zenzen/main-es5.e5369c928586858d215e.js",
+        "/ngx-zenzen/manifest.webmanifest",
+        "/ngx-zenzen/polyfills-es2015.46a1f113ae8253e2cae8.js",
+        "/ngx-zenzen/polyfills-es5.60acb9092c514f8609a6.js",
+        "/ngx-zenzen/runtime-es2015.187539ff764f707d935e.js",
+        "/ngx-zenzen/runtime-es5.187539ff764f707d935e.js",
+        "/ngx-zenzen/styles.527ff6ccce68c2365ffe.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/ngx-zenzen/assets/icons/icon-128x128.png",
+        "/ngx-zenzen/assets/icons/icon-144x144.png",
+        "/ngx-zenzen/assets/icons/icon-152x152.png",
+        "/ngx-zenzen/assets/icons/icon-192x192.png",
+        "/ngx-zenzen/assets/icons/icon-384x384.png",
+        "/ngx-zenzen/assets/icons/icon-512x512.png",
+        "/ngx-zenzen/assets/icons/icon-72x72.png",
+        "/ngx-zenzen/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/ngx-zenzen/1-es2015.8bb44ceedcb4d2b8e67e.js": "9a818c583a7911cf446930fad3d249ac33db4696",
+    "/ngx-zenzen/1-es5.8bb44ceedcb4d2b8e67e.js": "fb3cf2c52ff048b6e46777f22220501c286269b0",
+    "/ngx-zenzen/6-es2015.53db73066d4c5dd98177.js": "3d48664ff16680d8b44184f04ca80e01d69480a3",
+    "/ngx-zenzen/6-es5.53db73066d4c5dd98177.js": "2b047bb4e2857f02a7c0a9d692133737d60423bc",
+    "/ngx-zenzen/7-es2015.8755f17edb738c3b6928.js": "79ee23552dbfe1365299fef51d98f80081631e9a",
+    "/ngx-zenzen/7-es5.8755f17edb738c3b6928.js": "ea0a40b71c7092176ff708dccc3c6968e362ab4f",
+    "/ngx-zenzen/8-es2015.f26af5c1081f8a4ea5d3.js": "a908984ff2b8ee7c72c05e8639c6357014700234",
+    "/ngx-zenzen/8-es5.f26af5c1081f8a4ea5d3.js": "448461a9abd45c627cdcb6940cf216c0c990558a",
+    "/ngx-zenzen/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/ngx-zenzen/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/ngx-zenzen/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/ngx-zenzen/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/ngx-zenzen/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/ngx-zenzen/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/ngx-zenzen/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/ngx-zenzen/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/ngx-zenzen/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/ngx-zenzen/index.html": "8d7bf5e0fd376497cc5fed8bfa1dd077faf59ec2",
+    "/ngx-zenzen/main-es2015.e5369c928586858d215e.js": "4de108f0ee3dcf465f92372450afd8d8c807aaf6",
+    "/ngx-zenzen/main-es5.e5369c928586858d215e.js": "bc02523acfb696329c34944f6cdbe0ab1f342caf",
+    "/ngx-zenzen/manifest.webmanifest": "7c6a9e7aad1e38926221f215c3fb87dd14777969",
+    "/ngx-zenzen/polyfills-es2015.46a1f113ae8253e2cae8.js": "59106b84298f4c9494fa4d4a83c0c2eca4f904a6",
+    "/ngx-zenzen/polyfills-es5.60acb9092c514f8609a6.js": "c00d073de48b5a8983ff0308febbc48e4f8adc95",
+    "/ngx-zenzen/runtime-es2015.187539ff764f707d935e.js": "f1943dd1674dc051297b1696f7ced6954d21677f",
+    "/ngx-zenzen/runtime-es5.187539ff764f707d935e.js": "e11bb4372e78468f36b88eea496ccf057659d65f",
+    "/ngx-zenzen/styles.527ff6ccce68c2365ffe.css": "85b8a4b8575000e49826f8ad527da8ff8273b2f5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

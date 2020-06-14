@@ -1,0 +1,38 @@
+@import '~@angular/material/theming';
+
+@mixin zenzen-layout-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+
+  .layout-container {
+    &.is-desktop:before {
+      box-shadow: -5px -5px 0 2px mat-color($primary);
+    }
+
+    .vertical-sidenav {
+      background: mat-color($primary);
+
+      .nav-main {
+        .main-button {
+          &.active {
+            color: mat-color($accent, 50);
+            background: mat-color($accent);
+          }
+        }
+      }
+    }
+
+    .horizontal-sidenav {
+      .menu {
+        .menu-item.active {
+          background: mat-color($accent);
+        }
+      }
+    }
+
+  }
+}

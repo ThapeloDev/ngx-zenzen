@@ -1,0 +1,39 @@
+* {
+  &:active,
+  :focus {
+    outline: none !important;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+
+html {
+  font-family: sans-serif; // 2
+  line-height: 1.15; // 3
+  -webkit-text-size-adjust: 100%; // 4
+}
+
+// Body
+
+body {
+  margin: 0; // 1
+}
+
+
+//
+// Images and content
+//
+
+img {
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}

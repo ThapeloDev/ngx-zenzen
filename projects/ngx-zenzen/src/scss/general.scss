@@ -1,0 +1,34 @@
+/*
+* General
+*/
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: unset !important;
+}
+
+.userMenu {
+  min-width: 200px !important;
+}
+
+.mat-card, .userMenu {
+  border-radius: 16px !important;
+  // mat-elevation-z3
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+/*
+* Auth page
+*/
+.auth-page {
+  .mat-card {
+    max-width: 520px !important;
+  }
+
+  @include media-breakpoint-down(xs) {
+    .mat-card {
+      background: transparent !important;
+      transition: none !important;
+      box-shadow: none !important;
+      border-radius: 0px !important;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '.~@angular/material/theming';
+
+@mixin zenzen-app-reset-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  a {
+    color: mat-color($accent);
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  code {
+    color: mat-color($accent, lighter-contrast);
+    background-color: mat-color($accent, lighter);
+  }
+
+  .userMenu {
+    .name {
+      color:  mat-color($foreground, text);
+
+    }
+    .email {
+      color:  mat-color($foreground, text);
+      opacity: 0.8;
+    }
+  }
+}
